@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(140deg, black, gray, white, gray, black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main{
+  height: 475px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px solid orange:
+}
+.grid{
+  background: linear-gradient(black,#ff69b4,white,#ff69b4,black);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.sliderBar{
+  width: 400px;
+  height: 50px;
+  background: linear-gradient(90deg,white,#FF69B4,white);
+  display: flex;
+  margin-bottom: 50px;
+  position: relative;
+  border: 2px solid black;
+}
+.cell{
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /*background: pink;*/
+}
+.slider{
+  height: 100%;
+  aspect-ratio: 1/1;
+  background: lightgray;
+  border: 2px solid black;
+  position: absolute;
+}
+.slider:hover{
+  background: white;
+  cursor: grab;
+}
+.slider:active{
+  cursor: grabbing;
+}
+.dot{
+  background: black;
+  height: 70%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  position: absolute;
+  border: 2px solid white;
+}
